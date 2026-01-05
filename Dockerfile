@@ -5,10 +5,10 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # 3. Copy dependency file
-COPY requirement.txt .
+COPY requirements.txt .
 
 # 4. Install dependencies
-RUN pip install --no-cache-dir -r requirement.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # 5. Copy application code
 COPY . .
